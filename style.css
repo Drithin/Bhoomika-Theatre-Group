@@ -6,6 +6,9 @@
    
 }
 
+body{
+  padding-top: 100px;
+}
 /* Navbar */
 .navbar{
   /* margin-top: 0.5em; */
