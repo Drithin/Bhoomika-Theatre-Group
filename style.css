@@ -7,7 +7,7 @@
 }
 
 body{
-  padding-top: 100px;
+  padding-top: 135px;
 }
 /* Navbar */
 .navbar{
@@ -299,6 +299,11 @@ body{
     text-align: center;
 }
 
+.plays-list-home h4{
+  text-transform: uppercase;
+}
+
+
 /* gallery */
 .text-center .btn{
     border-radius: 200px;
@@ -443,3 +448,20 @@ li ion-icon{
     margin-left: 35px;
 
 } */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {  
+
+ .hero-content h2{
+
+  position : absolute;
+  left: 50%;
+  margin-left: -50px;
+  top: 75%;
+  margin-top: -50px;
+
+  font-size: 100%;
+ }
+
+ 
+}
