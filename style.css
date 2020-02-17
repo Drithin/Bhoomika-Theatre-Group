@@ -196,6 +196,7 @@ body{
 .training-actor p{
     text-align: justify;
     font-size: 100%;
+    line-height: 250%;
 }
 
 .training-actor img{
@@ -214,6 +215,7 @@ body{
 .training-ngo p{
     text-align: justify;
     font-size: 100%;
+    line-height: 250%;
 }
 
 .training-ngo img{

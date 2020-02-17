@@ -6,7 +6,7 @@
     $requirement    =   $_POST["requirement"];
 
 	
-	$to 			= 	"bhoomikatheatre@gmail.com";
+	$to 			= 	"drithn@gmail.com";
 	$subject 		= 	"Contact Enquiry For Bhoomika Theatre Group";
 	$message 		= 	"<html>
 
