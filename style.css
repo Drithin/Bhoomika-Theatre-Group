@@ -402,6 +402,20 @@ body{
     border: none;
 }
 
+.thankyou{
+  margin: 50px;
+  padding: 10px;
+ 
+}
+.thankyou h2{
+   color: #bf0909;
+   text-align: center;
+}
+
+.thankyou h6{
+  text-align: center;
+}
+
   /* Footer */
   .page-footer{
     color: white;
