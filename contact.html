@@ -63,6 +63,9 @@
                           <a class="nav-link" href="training.html">Training</a>
                       </li>
                       <li class="nav-item">
+                            <a class="nav-link" href="reg.html">Registration</a>
+                        </li> 
+                      <li class="nav-item">
                           <a class="nav-link" href="child.html">Facing the Child</a>
                       </li>
                       <li class="nav-item">
@@ -129,25 +132,34 @@
     </div>
 
 <!-- Contact Form -->
-<form class="contact-form" id="contact-form"  method="post" enctype="multipart/form-data" action="/contact-send.php">
+<form class="contact-form" id="contact-form"  method="post" enctype="multipart/form-data" action="/contact-send.php" onsubmit="return Validate()" name="sform">
 
     <div class="container">
             <h4>Enquire us</h4>
             <hr>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="form-group"><label>Name</label> <input type="text" class="form-control" name="name"></div>
+                    <div class="form-group"><label>Name</label><span class="required">*</span>
+                    <input type="text" id="username" class="form-control" name="username"></div>
+                    <div id="username_error"></div>
                 </div>
                 <div class="col-md-4">
-                    <div class="form-group"><label>E-Mail</label> <input type="text" class="form-control" name="email"></div>
+                    <div class="form-group"><label>E-Mail</label><span class="required">*</span> 
+                    <input type="text" id="email" class="form-control" name="email"></div>
+                    <div id="email_error"></div>
                 </div>
                 <div class="col-md-4">
-                    <div class="form-group"><label>Contact Number</label> <input type="text" class="form-control" name="mobile"></div>
+                    <div class="form-group"><label>Contact Number</label><span class="required">*</span> 
+                    <input type="text" id="mobile" class="form-control" name="mobile"></div>
+                    <div id="mobile_error"></div>
                 </div>
                 <div class="col-12">
-                    <div class="form-group"><label>Requirement</label> <textarea class="form-control" name="requirement"></textarea></div>
+                    <div class="form-group"><label>Message</label><span class="required">*</span>
+                    <textarea class="form-control" type="text" id="message" name="message"></textarea></div>
+                    <div id="message_error"></div>
                 </div>
                 <div class="col-12"><input type="submit" class="btn" name=""></div>
+                <!-- <button class="btn btn-info my-4 btn-block" type="submit">submit</button> -->
             </div>
     </div>
     
@@ -170,7 +182,7 @@
       </footer>
       <!-- Footer -->
 
-
+      <script src="contact-script.js"></script>
        <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

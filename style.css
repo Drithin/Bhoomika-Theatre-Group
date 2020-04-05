@@ -79,7 +79,7 @@ body{
       color: #bf0909 !important;
       font-size: 100%;
       margin-top: 40px;
-      margin-bottom:80px;
+      margin-bottom:40px;
   }
 
   .home-content{
@@ -255,7 +255,7 @@ body{
 
 .training-workshops h1{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-size: 200%;
 }
 
@@ -269,6 +269,29 @@ body{
 .training-workshops img{
     width: 100%;
 }
+
+/* Registration  */
+.rules-regulations{
+  padding: 80px 0;
+}
+
+.rules-regulations h1{
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 200%;
+}
+
+.rules-regulations li{
+  text-align: justify;
+  font-size: 100%;
+  line-height: 250%;
+  margin-bottom: 10px;
+}
+
+
+
+
+
 
 /* history*/
 .history{
@@ -376,6 +399,8 @@ body{
             animation-fill-mode: both;
   }
 
+  /* Registration Form */
+
   /* Contact */
   .contact-content{
 
@@ -410,10 +435,12 @@ body{
 .thankyou h2{
    color: #bf0909;
    text-align: center;
+   font-size: 200%;
 }
 
 .thankyou h6{
   text-align: center;
+  font-size: 200%;
 }
 
   /* Footer */
@@ -464,6 +491,11 @@ li ion-icon{
     margin-left: 35px;
 
 } */
+
+.required
+{
+    color: red;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {  
