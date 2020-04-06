@@ -218,7 +218,7 @@
 <form class="registration-form" id="contact-form"  method="post" enctype="multipart/form-data" action="/reg-send.php" onsubmit="return Validate()" name="rform">
 
     <div class="container">
-            <h4>Registration Form</h4>
+            <h1>Registration Form</h1>
             <hr>
             <div class="row">
                 <div class="col-12">
@@ -369,9 +369,9 @@
                 <div class="col-12">
                     <p>Prior Theatre Experience :</p>
 
-                    <input type="checkbox" id="yes" name="priorTheatreExperience" value="yes">
+                    <input type="radio" id="yes" name="priorTheatreExperience" required  value="yes">
                     <label for="yes"> Yes</label><br>
-                    <input type="checkbox" id="no" name="priorTheatreExperience" value="no">
+                    <input type="radio" id="no" name="priorTheatreExperience" value="no">
                     <label for="no"> No</label><br>
                 
                     <label for="ifyes"> If Yes, Please Give Details </label>
@@ -410,7 +410,7 @@
 
                 <div class="col-12">
                     <p>How did you get to know about Bhoomika? </p>
-                    <input type="radio" id="web" name="bhoomikaSource" value="web">
+                    <input type="radio" id="web" name="bhoomikaSource" required value="web">
                     <label for="web">Bhoomika Site</label><br>
                     <input type="radio" id="google" name="bhoomikaSource" value="google">
                     <label for="google">Google My Business</label><br>
@@ -418,10 +418,12 @@
                     <label for="friend">Friends</label><br>
                     <input type="radio" id="oldstudents" name="bhoomikaSource" value="oldstudents">
                     <label for="oldstudents">Old Students of Bhoomika</label><br>
+
                     <label for="other"> Other </label>
                     <input type="text" class="form-control" name="bhoomikaSource"><br>
                    
                     <div id="bhoomikaSource_error"></div><br>
+                    
                 </div>
 
                 <div class="col-12">
@@ -433,9 +435,9 @@
                 <div class="col-12">
                     <p>Have you applied for this course in the past?</p>
 
-                    <input type="checkbox" id="yes" name="appBefore" value="yes">
+                    <input type="radio" id="yes" name="appBefore" required value="yes">
                     <label for="yes"> Yes</label><br>
-                    <input type="checkbox" id="no" name="appBefore" value="no">
+                    <input type="radio" id="no" name="appBefore" value="no">
                     <label for="no"> No</label><br>
                 
                     <label for="ifyes"> If Yes, Please State Date of your Application:</label>
@@ -447,9 +449,9 @@
                 <div class="col-12">
                     <p>For some reason if you can not be accommodated in this batch, are you prepared to work backstage for our theatrical productions? (Preference will be given to such candidates) </p>
 
-                    <input type="checkbox" id="yes" name="backstageConsent" value="yes">
+                    <input type="radio" id="yes" name="backstageConsent" required value="yes">
                     <label for="yes"> Yes</label><br>
-                    <input type="checkbox" id="no" name="backstageConsent" value="no">
+                    <input type="radio" id="no" name="backstageConsent" value="no">
                     <label for="no"> No</label><br>   
                     
                     <div id="backstageConsent_error"></div><br>
@@ -457,11 +459,11 @@
                 </div>
 
                 <div class="col-12">
-                    <p>I will abide by the rules and regulations as given above:</p>
-                    <input type="checkbox" id="yes" name="rulesConsent" value="yes">
-                    <label for="yes"> Yes</label><br>
-                    <input type="checkbox" id="no" name="rulesConsent" value="no">
-                    <label for="no"> No</label><br>    
+                   
+                    <input type="checkbox" id="yes" name="rulesConsent" required value="yes"> 
+                    <label for="rules-consent"> I will abide by the rules and regulations as given above</label><br>
+                    <!-- <input type="checkbox" id="no" name="rulesConsent" value="no">
+                    <label for="no"> No</label><br>     -->
                     
                     <div id="rulesConsent_error"></div><br>
                 </div>

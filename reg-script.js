@@ -2,7 +2,7 @@ var username = document.forms['rform']['username'];
 var email = document.forms['rform']['email'];
 var mobile = document.forms['rform']['mobile'];
 var age = document.forms['rform']['age'];
-// var gender = document.forms['rform']['gender'];
+var gender = document.forms['rform']['gender'];
 var nativePlace = document.forms['rform']['nativePlace'];
 var presentAddressWithPin = document.forms['rform']['presentAddressWithPin'];
 var educationalQualification = document.forms['rform']['educationalQualification'];
@@ -10,6 +10,7 @@ var motherTongue = document.forms['rform']['motherTongue'];
 // var otherLanguagesKnown = document.forms['rform']['otherLanguagesKnown'];
 // var presentOccupation = document.forms['rform']['presentOccupation'];
 
+console.log(gender[0].checked);
 
 var username_error = document.getElementById('username_error');
 var email_error = document.getElementById('email_error');
@@ -89,18 +90,27 @@ if(isNaN(mobile.value) || mobile.length < 10){
    
     return false;
 }
+if(isNaN(age.value) || age.value < 16){
+    mobile.style.border = "1px solid red";
+    document.getElementById('mobile').style.color = "red";
+    mobile_error.textContent = "Not a Valid Age";
+    mobile.focus();
+   
+    return false;
+}
 
 
 
 
-    //validate gender
-    // if (gender[0].checked == false || gender[1].checked == false) {
-    //     gender.style.border = "1px solid red";
-    //     document.getElementById('gender').style.color = "red";
-    //     gender_error.innerHTML = "Please Select a Gender";
+    // validate gender
+    if (gender[0].checked == false || gender[1].checked == false) {
+        console.log(gender); 
+        gender.style.border = "1px solid red";
+        document.getElementById('gender').style.color = "red";
+        gender_error.innerHTML = "Please Select a Gender";
     
-    //     return false;
-    //    }
+        return false;
+       }
 
     if (nativePlace.value == "") {
         nativePlace.style.border = "1px solid red";

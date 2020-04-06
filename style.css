@@ -497,6 +497,10 @@ li ion-icon{
     color: red;
 }
 
+.registration-form h1{
+  text-align: center;
+  font-size: 200%;
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {  
 
